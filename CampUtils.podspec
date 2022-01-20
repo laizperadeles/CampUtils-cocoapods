@@ -1,48 +1,69 @@
-#
-# Be sure to run `pod lib lint CampUtils.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'CampUtils'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of CampUtils.'
+# 1
+s.platform = :ios
+s.ios.deployment_target = '10.0'
+s.name = "CampUtils"
+s.summary = "Pod criado para o Camp da IOASYS"
+s.requires_arc = true
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+#2
+s.version          = '0.1.1'
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+# 3
+s.license = { :type => "MIT", :file => "LICENSE" }
 
-  s.homepage         = 'https://github.com/laizperadeles/CampUtils-cocoapods'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'CampUtils' => 'laizlavigne@hotmail.com' }
-  s.source           = { :git => 'https://github.com/laizperadeles/CampUtils-cocoapods.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+# 4 - Replace with your name and e-mail address
+s.author = { "NOME_DO_AUTOR" => "EMAIL_DO_AUTOR" }
 
-  s.ios.deployment_target = '13.0'
+# 5 - Replace this URL with your own GitHub page's URL (from the address bar)
+s.homepage = "https://github.com/laizperadeles/CampUtils-cocoapods"
 
-  s.source_files = 'Classes/**/*.swift'
-  
-  s.swift_version = '5.0'
-  
-  s.platforms = {
-      "ios": "13.0"
-  }
-  
-  # s.resource_bundles = {
-  #   'CampUtils' => ['CampUtils/Assets/*.png']
-  # }
+# 6 - Replace this URL with your own Git URL from "Quick Setup"
+s.source = { :git => "https://github.com/laizperadeles/CampUtils-cocoapods.git",
+:tag => "#{s.version}" }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+# 7 COLOQUE AQUI TODAS AS BIBLIOTECAS NATIVAS QUE FOR USAR
+s.framework = "UIKit"
+s.framework = "SceneKit"
+s.framework = "CoreMotion"
+
+# 8
+s.source_files = "CampUtils/**/*.{swift}"
+
+# 9
+#s.resources = "SimpleStereoScene/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+
+# 10
+s.swift_version = "5.0"
+
 end
+#
+#s.description      = <<-DESC
+#TODO: Add long description of the pod here.
+#                       DESC
+#
+#  s.homepage         = 'https://github.com/laizperadeles/CampUtils-cocoapods'
+#  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+#  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+#  s.author           = { 'CampUtils' => 'laizlavigne@hotmail.com' }
+#  s.source           = { :git => 'https://github.com/laizperadeles/CampUtils-cocoapods.git', :tag => s.version.to_s }
+#  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+#
+#  s.ios.deployment_target = '13.0'
+#
+#  s.source_files = 'Classes/**/*.swift'
+#  
+#  s.swift_version = '5.0'
+#  
+#  s.platforms = {
+#      "ios": "13.0"
+#  }
+#  
+#  # s.resource_bundles = {
+#  #   'CampUtils' => ['CampUtils/Assets/*.png']
+#  # }
+#
+#  # s.public_header_files = 'Pod/Classes/**/*.h'
+#  # s.frameworks = 'UIKit', 'MapKit'
+#  # s.dependency 'AFNetworking', '~> 2.3'
+#end
