@@ -21,16 +21,22 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/CampUtils/CampUtils'
+  s.homepage         = 'https://github.com/laizperadeles/CampUtils-cocoapods'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'CampUtils' => 'laizlavigne@hotmail.com' }
-  s.source           = { :git => 'https://github.com/CampUtils/CampUtils.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/laizperadeles/CampUtils-cocoapods.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '13.0'
 
-  s.source_files = 'CampUtils/Classes/**/*'
+  s.source_files = 'Classes/**/*.swift'
+  
+  s.swift_version = '5.0'
+  
+  s.platforms = {
+      "ios": "13.0"
+  }
   
   # s.resource_bundles = {
   #   'CampUtils' => ['CampUtils/Assets/*.png']
