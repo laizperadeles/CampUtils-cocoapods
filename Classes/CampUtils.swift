@@ -15,6 +15,8 @@ public protocol CalculatorProtocol {
 }
 
 public class Calculator: CalculatorProtocol {
+    static public let shared = Calculator()
+    
     public func sum(firstNumber: Double, secondNumber: Double) -> Double {
         (firstNumber + secondNumber) * getTimeStemp() / (secondNumber - firstNumber)
     }
