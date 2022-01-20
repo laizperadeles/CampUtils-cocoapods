@@ -27,7 +27,7 @@ s.framework = "SceneKit"
 s.framework = "CoreMotion"
 
 # 8
-s.source_files = "CampUtils/Classes/**/*"
+s.source_files = "Classes/**/*.{swift}"
 
 # 9
 #s.resources = "SimpleStereoScene/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
