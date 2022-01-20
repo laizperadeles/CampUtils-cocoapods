@@ -1,0 +1,22 @@
+{
+  "name": "CampUtils",
+  "version": "0.1.0",
+  "summary": "A short description of CampUtils.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/CampUtils/CampUtils",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "CampUtils": "laizlavigne@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/CampUtils/CampUtils.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "CampUtils/Classes/**/*"
+}
